@@ -91,3 +91,14 @@ print("Welcome to super simple calculator")
 a = float(input("enter first number: "))
 b = float(input("enter second nummber: "))
 print("The value of a // b is : ", a // b)
+
+# Type Conversion/Casting in Python
+# Since the input function always returns a string, you can directly use len() on it
+# but if you want to store the length in a variable, you need to convert it to string for concatenation
+# else it will throW a TypeError
+num_char = input("What is your name?:")
+print("The number of characters in your name is: " + str(len(num_char)))
+           # OR #
+num_char = len(input("What is your name: "))
+new_num_char = str(num_char)
+print("The number of characters in your name is: " + new_num_char)
