@@ -102,3 +102,7 @@ print("The number of characters in your name is: " + str(len(num_char)))
 num_char = len(input("What is your name: "))
 new_num_char = str(num_char)
 print("The number of characters in your name is: " + new_num_char)
+
+# For confirmation on what kind of data type you are working with, you can use the type() function
+num_char = 964.52
+print(type(num_char))
