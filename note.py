@@ -106,3 +106,10 @@ print("The number of characters in your name is: " + new_num_char)
 # For confirmation on what kind of data type you are working with, you can use the type() function
 num_char = 964.52
 print(type(num_char))
+
+# You can also use type() to check the data type of user input
+two_digit_number = input("Type a two digit number: ")
+print(type(two_digit_number))
+a = int((two_digit_number[0]))
+b = int((two_digit_number[1]))
+print("The sum of a and b is: ", a + b)
