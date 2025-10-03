@@ -113,3 +113,10 @@ print(type(two_digit_number))
 a = int((two_digit_number[0]))
 b = int((two_digit_number[1]))
 print("The sum of a and b is: ", a + b)
+
+# Calculating BMI (Body Mass Index)
+height = float(input("enter your height in meter: "))
+weight = int(input("enter your weight in KG: "))
+BMI = weight / height ** 2
+print(type(BMI))
+print(int(BMI))
