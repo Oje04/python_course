@@ -120,3 +120,22 @@ weight = int(input("enter your weight in KG: "))
 BMI = weight / height ** 2
 print(type(BMI))
 print(int(BMI))
+
+# Calculating the remaining days, weeks and months left if you live until 90 years old
+life_span = 90
+days = 365 * life_span
+weeks = days / 7
+month = life_span * 12
+age = int(input("Enter your current age: "))
+print (f"you have {days - (age * 365)} days, {weeks - (age * 52)} weeks, and {month - (age * 12)} months, left.")
+     #OR#
+curent_age = int(input("Enter your current age: "))
+life_span = 90
+years_remaining = life_span - current_age
+months_remaining = years_remaining * 12
+weeks_remianing = years_remaining * 52
+days_remaining = years_remaining * 365
+message = f"you have {days_remaining} days, {weeks_remianing} weeks, and {months_remaining} months, left."
+print(message)
+
+
