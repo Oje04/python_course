@@ -138,4 +138,14 @@ days_remaining = years_remaining * 365
 message = f"you have {days_remaining} days, {weeks_remianing} weeks, and {months_remaining} months, left."
 print(message)
 
-
+# Final Project: Tip Calculator
+print("Welcome to the tip calculator.")
+bill = float(input("What was the total bill?: "))
+percent = float(input("What percentage tip would you like to give? 10, 12, or 15?: "))
+num_of_people = int(input("How many people to split the bill?: "))
+percent = float(percent / 100)
+tip = float(bill * percent)
+total_bill = float(bill + tip)
+final_split = round(total_bill / num_of_people, 2)
+message = f"Each perrson should pay: ${final_split}"
+print(message)
