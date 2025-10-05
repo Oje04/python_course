@@ -158,3 +158,20 @@ if num % 2 == 0:
 else:
     print("this is an odd number") 
 
+# A rollercoaster ride ticketing program as an example of using if-else, nested if-else and elif statements.
+print("Welcome to the rollercoaster party!")
+height = int(input("Enter your height in cm: "))
+if height >= 120:
+    print("You can ride, head over to the ticket boot")
+    age = int(input("How old are you?: "))
+    if age < 10:
+        print("Your ticket cost $4.99")
+    elif age <= 15:
+        print("Your ticket cost $9.99")
+    elif age <= 20:
+        print("Your ticket cost $14.99")
+    else:
+        print("Your ticket cost $19.99")
+else:
+    print("Sorry you can't ride the rollercoaster\nBye!")
+
