@@ -175,3 +175,19 @@ if height >= 120:
 else:
     print("Sorry you can't ride the rollercoaster\nBye!")
 
+# BMI 2.0 Calculator
+print("Welcome to the BMI calculator!")
+height = float(input("Please enter your height in cm: "))
+weight = int(input("Please enter your weight in kg: "))
+bmi = round(weight / height ** 2, 2)
+if bmi < 18.5:
+    print(f"{bmi} You are underweight")
+elif bmi <= 25:
+    print(f"{bmi} You are normal weight")
+elif bmi <= 30:
+    print(f"{bmi} You are overweight")
+elif bmi <= 35:
+    print(f"{bmi} You are obese")
+else:
+    print(f"{bmi} You are clinically obese")
+
