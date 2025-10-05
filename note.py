@@ -149,3 +149,12 @@ total_bill = float(bill + tip)
 final_split = round(total_bill / num_of_people, 2)
 message = f"Each perrson should pay: ${final_split}"
 print(message)
+
+# A program that checks if a number is odd or even
+print("this program checks for odd or even number")
+num = int(input("Enter a number: "))
+if num % 2 == 0:
+    print("this is an even number")
+else:
+    print("this is an odd number") 
+
