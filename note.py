@@ -191,3 +191,16 @@ elif bmi <= 35:
 else:
     print(f"{bmi} You are clinically obese")
 
+# Nested if statement to check if a year is a leap year
+print("Welcome to the leap year calculator")
+year = int(input("Enter the year you want to check: "))
+if year % 4 == 0:
+    if year % 100 == 0:
+        if year % 400 == 0:
+            print(f"{year} is a leap year")
+        else:
+            print(f"{year} is not a leap year")
+    else:
+        print(f"{year} is a leap year")
+else:
+    print(f"{year} is not a leap year")
