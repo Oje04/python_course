@@ -263,3 +263,25 @@ if extra_cheese == "Y":
 else:
     price = price
 print(f"Your sub-total is ${price}.")
+
+ #OR#
+
+ print("Welcome to python pizza deliveries!")
+size = input("What size pizza do you want? S, M, L: ")
+pepperoni = input("Do you want pepperoni? Y or N: ")
+extra_cheese = input("Do you want extra cheese? Y or N: ")
+price = 0
+if size == "S":
+    price += 14.99
+elif size == "M":
+    price += 19.99
+else:
+    price += 24.99
+if pepperoni == "Y":
+    if size == "S":
+        price += 1.99
+    else:
+        price += 2.99
+if extra_cheese == "Y":
+    price += 0.99
+print(f"Your sub-total is ${round(price, 2)}.")
