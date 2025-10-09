@@ -285,3 +285,31 @@ if pepperoni == "Y":
 if extra_cheese == "Y":
     price += 0.99
 print(f"Your sub-total is ${round(price, 2)}.")
+
+# Rollercoaster 3.0 with logical operator to consider middle age group discount
+print("Welcome to the rollercoaster party!")
+height = int(input("Enter your height in cm: "))
+bill = 0
+if height >= 120:
+    print("You can ride, head over to the ticket boot")
+    age = int(input("How old are you?: "))
+    if age < 10:
+        bill = 4.99
+        print("Toddler ticket cost $4.99")
+    elif age <= 15:
+        bill = 9.99
+        print("Adolescent ticket cost $9.99")
+    elif age <= 20:
+        bill = 14.99
+        print("Youth ticket cost $14.99")
+    elif age >= 45 and age <= 55:
+        print("Middle age ticket cost $0.00")
+    else:
+        bill = 19.99
+        print("Adult ticket cost $19.99")
+    photo = input("Do you want a photo taken? Y or N: ")
+    if photo == "Y":
+        bill += 2.99
+    print(f"Your sub-total is ${round(bill, 2)}, enjoy your ride!")
+else:
+    print("Sorry you can't ride the rollercoaster\nBye!")
