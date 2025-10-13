@@ -313,3 +313,35 @@ if height >= 120:
     print(f"Your sub-total is ${round(bill, 2)}, enjoy your ride!")
 else:
     print("Sorry you can't ride the rollercoaster\nBye!")
+
+# Love calculator using the lower() & count() function to make the input case insensitive and count the number of times a letter appears in a string
+print("Welcome to the Love Calculator!")
+name1 = input("Enter your name \n")
+name2 = input("Enter your partner'S name \n")
+
+name = name1 + name2
+
+name_check = name.lower()
+
+t = name_check.count("t")
+r = name_check.count("r")
+u = name_check.count("u")
+e = name_check.count("e")
+
+true = t + r + u + e
+
+l = name_check.count("l")
+o = name_check.count("o")
+v = name_check.count("v")
+e = name_check.count("e")
+
+love = l + o + v + e
+
+love_score = int(str(true) + str(love))
+
+if love_score < 10 | love_score > 90:
+    print(f"Your score is {love_score} you go together like coke and mentos")
+elif love_score >= 40 & love_score <= 50:
+    print(f"Your score is {love_score} you are alright together.")
+else:
+    print(f"Your score is {love_score}.")
