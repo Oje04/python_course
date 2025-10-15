@@ -345,3 +345,84 @@ elif love_score >= 40 & love_score <= 50:
     print(f"Your score is {love_score} you are alright together.")
 else:
     print(f"Your score is {love_score}.")
+
+# Treasure Island Game
+print('''  _                                     _     _                 _ 
+| |                                   (_)   | |               | |
+| |_ _ __ ___  __ _ ___ _   _ _ __ ___ _ ___| | __ _ _ __   __| |
+| __| '__/ _ \/ _` / __| | | | '__/ _ \ / __| |/ _` | '_ \ / _` |
+| |_| | |  __/ (_| \__ \ |_| | | |  __/ \__ \ | (_| | | | | (_| |
+ \__|_|  \___|\__,_|___/\__,_|_|  \___|_|___/_|\__,_|_| |_|\__,_|
+                                                                 
+                                                                 
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
+|                   | |o;    `"-.o`"=._``  '` " ,__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/
+*******************************************************************************''')
+print("Welcome to the Treasure Island!\nYour mission is to find the Treasure.\nGoodluck!!!")
+choice1 = input('You\'ve arrived at a crossroad, type "Right" if you want to go right or type "Left" if you want to go left.\n').lower()
+if choice1 == "left":
+    choice2 = input('You made the right choice however, the Treasure is in the middle of the lake. type "Swim" if you want to\nswim to the island or "Wait" if you want a boat to get you to the island.\n').lower()
+    if choice2 == "wait":
+        choice3 = input('Yay! You\'ve made it to the island but there is a tower and an old hut.\nWhich do you want to check first?\ntype "Tower" to go to the tower or type "Hut" to go to the hut.\n').lower()
+        if choice3 == "tower":
+            choice4 = input('Well done! You\'ve reached the Tower but there are three doors, choose which door to enter by typing either "Yellow", "Blue" or "Red"\n').lower()
+            if choice4 == "yellow":
+                print('''         _________
+        /\____;;___\\        
+       | /         /
+       `. ())oo() .
+        |\(%()*^^()^\
+        
+       %| |-%-------|
+      % \ | %  ))   |
+      %  \|%________|\nCongratulations! You found the treasure. You Win!!!''')
+            elif choice4 == "blue":
+                print('''        	 ______________
+           ,===:'.,            `-._
+                `:.`---.__         `-._
+                   `:.     `--.         `.
+                     \.        `.         `.
+             (,,(,    \.         `.   ____,-`.,
+          (,'     `/   \.   ,--.___`.'
+      ,  ,'  ,--.  `,   \.;'         `
+       `{D, {    \  :    \;
+         V,,'    /  /    //
+         j;;    /  ,' ,-//.    ,---.      ,
+         \;'   /  ,' /  _  \  /  _  \   ,'/
+               \   `'  / \  `'  / \  `.' /
+                `.___,'   `.__,'   `.__,'  \nOops! you have entered a dragon\'s lair. Game Over.''')
+            elif choice4 == "red":
+                print('''               (  .      )
+           )           (              )
+                 .  '   .   '  .  '  .
+        (    , )       (.   )  (   ',    )
+         .' ) ( . )    ,  ( ,     )   ( .
+      ). , ( .   (  ) ( , ')  .' (  ,    )
+     (_,) . ), ) _) _,')  (, ) '. )  ,. (' )
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nOops! You entered a room full of fire. Game Over.''')
+            else:
+                print("You have picked a wrong door. Game Over.")
+        else:
+            print("Dang! There was a snake in the hut and you got bitten by the snake. Game Over.")
+    else:
+        print('Oops! You\'ve been attacked by a shark. Game Over.')
+else:
+    print("Oops! You fell into a hole. Game Over.")
+
